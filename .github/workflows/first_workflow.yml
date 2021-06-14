@@ -11,10 +11,10 @@ jobs:
             - name: ssh command
               uses: appleboy/ssh-action@master
               with:
-                  host: simon-svirkov.com
+                  host: 135.181.39.204
                   username: admin
                   key: ${{ secrets.SSH_SECRET}}
-                  port: 22
+                  port: 135.181.39.204
                   script: |
                       cd /var/www/
                       git pull origin main
