@@ -16,7 +16,7 @@ jobs:
                   key: ${{ secrets.SSH_SECRET}}
                   port: 2222
                   script: |
-                      cd /var/www/
+                      cd /var/www/html
                       git pull origin main
                       git status
 
