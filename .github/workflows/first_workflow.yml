@@ -14,7 +14,7 @@ jobs:
                   host: 135.181.39.204
                   username: admin
                   key: ${{ secrets.SSH_SECRET}}
-                  port: 135.181.39.204
+                  port: 2222
                   script: |
                       cd /var/www/
                       git pull origin main
